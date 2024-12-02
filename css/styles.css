@@ -1,0 +1,100 @@
+body {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    width: 75vw;
+    height: 80vh;
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 15px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 28%;
+    position: relative;
+    top: 30px;
+}
+
+.profile-details {
+    position: relative;
+    top: 1.3em;
+    font-size: 14px;
+    text-align: center;
+}
+
+.location {
+    color: hsl(75, 94%, 57%);
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+
+.bio {
+    font-weight: 400;
+}
+
+.container,.social-links {
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links button {
+    margin-bottom: 20px;
+    margin-left: -20px;
+    padding: 15px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 75vw;
+    font-weight: 700;
+    background-color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 100%);
+}
+
+.social-links button:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
+
+@media (min-width: 768px) {
+    .container {
+        left: 70px;
+    }
+
+    .social-links button {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        left: 100px;
+        top: 80px;
+    }
+
+    .social-links button {
+        width: 65vw;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 45vw;
+        left: 22em;
+    }
+
+    .social-links button {
+        width: 35vw;
+    }
+}
